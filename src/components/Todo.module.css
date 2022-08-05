@@ -1,0 +1,163 @@
+.container {
+  display: grid;
+  padding: 100px 0 0 0;
+
+  text-align: center;
+  font-weight: 600;
+  color: var(--blue-200);
+}
+
+svg {
+  font-weight: 600;
+  color: var(--blue-200);
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 54px;
+  display: flex;
+  align-items: center;
+
+  margin-top: calc(-20px);
+}
+
+.inputContainer span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 54px;
+  width: 60%;
+  border: none;
+
+  resize: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-indent: 15px;
+}
+input::placeholder {
+  color: var(--blue-200);
+}
+
+input:focus {
+  border: transparent;
+}
+
+.inputContainer form button {
+  width: 90px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: var(--blue-800);
+  background-color: var(--blue-200);
+  margin-left: 8px;
+
+  cursor: pointer;
+}
+
+button svg {
+  color: var(--blue-800);
+  margin-right: auto;
+}
+
+button span {
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.emptyTodo {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 50px;
+  color: var(--blue-200);
+  font-size: 2rem;
+}
+
+.trashIcon {
+  color: red;
+  cursor: pointer;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+
+.listTodo {
+  width: 80%;
+  margin: auto;
+  border: 1px solid var(--blue-100);
+  background-color: var(--blue-500);
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.todoItem {
+  width: 95%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 3px solid blue; */
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 4px 4px;
+
+  transition: all 0.8s;
+}
+
+.listTodo:hover {
+  background: var(--blue-200);
+  color: var(--blue-800);
+}
+
+.trashIcon {
+  color: inherit;
+  /* border: 3px solid yellow; */
+  font-size: 1.2rem;
+}
+
+.trashIcon:hover {
+  color: var(--logo-one);
+}
+
+.todoUncompleted {
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+.todoCompleted {
+  color: var(--completed);
+}
+
+.todoDate {
+  width: 95%;
+  margin: auto;
+  text-align: left;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 3px solid white; */
+  padding-top: 5px;
+  padding-bottom: 10px;
+
+  transition: all 0.8s;
+}

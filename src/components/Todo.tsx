@@ -61,6 +61,8 @@ export function Todo() {
     setTodos(todoState)
   }
 
+  const completedTodos = todos.filter((todo) => todo.isCompleted).length
+
   return (
     <>
       <div className={styles.inputContainer}>
@@ -76,6 +78,10 @@ export function Todo() {
             <span>Add <PlusCircle size={'32px'} /></span>
           </button>
         </form>
+      </div>
+      <div className={styles.todoCount}>
+        <span>Tarefas Criadas  <em>{todos.length}</em></span>
+        <span>Concluidas <em>{completedTodos} of {todos.length}</em></span>
       </div>
       <div>
         {
@@ -105,7 +111,7 @@ export function Todo() {
                               className={styles.todoUncompleted}
                               onClick={() => isTodoComplete(todo.id)}
 
-                            /> 
+                            />
                           ) : (
                             <CheckSquare size={'1.5rem'}
                               className={styles.todoCompleted}

@@ -80,8 +80,8 @@ export function Todo() {
         </form>
       </div>
       <div className={styles.todoCount}>
-        <span>Tarefas Criadas  <em>{todos.length}</em></span>
-        <span>Concluidas <em>{completedTodos} of {todos.length}</em></span>
+        <span>Created ToDos  <em>{todos.length}</em></span>
+        <span>Finished <em>{completedTodos} of {todos.length}</em></span>
       </div>
       <div>
         {
